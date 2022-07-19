@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SimpleBackupApp</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+  <%= stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload" %>
+  <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+  <%= javascript_importmap_tags %>
+</head>
+
+<body>
+  <main class="container mx-auto mt-28 px-5 flex">
+    <section class="h-screen">
+      <div class="container px-6 py-12 h-full">
+        <div class="flex justify-center items-center flex-wrap h-full g-6 text-gray-800">
+          <div class="md:w-8/12 lg:w-6/12 mb-12 md:mb-0">
+            <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.svg" class="w-full" alt="Phone image"/>
+          </div>
+          <div class="md:w-8/12 lg:w-5/12 lg:ml-20">
+            <%= yield %>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

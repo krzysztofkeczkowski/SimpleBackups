@@ -1,6 +1,12 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
+  plugins: [
+    require('flowbite/plugin')
+  ],
+  content: [
+    "./node_modules/flowbite/**/*.js"
+  ],
   darkMode: 'class',
   content: [
     './app/helpers/**/*.rb',
@@ -8,11 +14,6 @@ module.exports = {
     './app/views/**/*',
   ],
   theme: {
-    extend: {
-      fontFamily: {
-        sans: ['Inter var', ...defaultTheme.fontFamily.sans],
-      },
-    },
   },
   plugins: [
     require('@tailwindcss/forms'),

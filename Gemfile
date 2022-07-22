@@ -16,6 +16,7 @@ gem "bootsnap", require: false
 # mine below
 gem "tailwindcss-rails", "~> 2.0"
 gem "devise"
+gem "kaminari"
 
 group :development, :test do
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
